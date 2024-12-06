@@ -5,6 +5,14 @@ export const AppState = reactive({
   /**@type {import('@bcwdev/auth0provider-client').Identity} */
   identity: null,
   /** @type {import('./models/Account.js').Account} user info from the database*/
-  account: null
+  account: null,
+
+  /** @type {import('./models/Post.js').Post[]} user info from the database*/
+  posts: [],
+
+
+  /** @type {import('./models/Ad.js').Ad[]} user info from the database*/
+  ads: [],
+
 })
 
