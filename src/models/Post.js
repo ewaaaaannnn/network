@@ -8,5 +8,6 @@ export class Post {
     this.likes = data.likes
     this.id = data.id
     this.comments = data.comments
+    this.createdAt = new Date(data.createdAt)
   }
 }
