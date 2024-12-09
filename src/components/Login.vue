@@ -31,12 +31,7 @@ async function logout() {
           <div class="list-group">
             <router-link v-if="account" :to="{ name: 'Profile', params: { profileId: account.id } }">
               <div class="list-group-item dropdown-item list-group-item-action">
-                Profile Page
-              </div>
-            </router-link>
-            <router-link :to="{ name: 'Account' }">
-              <div class="list-group-item dropdown-item list-group-item-action">
-                Manage Account
+                View Profile
               </div>
             </router-link>
             <div class="list-group-item dropdown-item list-group-item-action text-danger selectable" @click="logout">

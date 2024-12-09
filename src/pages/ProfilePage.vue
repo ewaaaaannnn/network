@@ -59,7 +59,8 @@ async function getPostsbyCreatorId() {
         <a v-if="profile.linkedin" class="mdi mdi-linkedin" href=""></a>
       </div>
       <div class="profile-margin">
-        <h2>{{ profile.name }}</h2>
+        <h2>{{ profile.name }} <span v-if="profile.graduated == true" class="mdi mdi-school"></span></h2>
+        <p>{{ profile.class }}</p>
       </div>
       <p>{{ profile.bio }}</p>
       <button v-if="profile.id == account.id" data-bs-toggle="modal" data-bs-target="#postModal" type="button"
